@@ -1,9 +1,10 @@
-📊 Google Play Store Data Cleaning & EDA
-📌 Project Overview
+📊 **Google Play Store Data Cleaning & EDA**
+
+**Project Overview**
 
 This project focuses on cleaning and exploring the Google Play Store dataset using SQL and basic data visualization.
 
-🧹 Data Cleaning Summary
+🧹 **Data Cleaning Summary**
 
 Steps performed:
 
@@ -19,7 +20,7 @@ Cleaning app version formats
 
 Removing duplicates
 
-📈 Exploratory Data Analysis (EDA)
+📈 **Exploratory Data Analysis (EDA)**
 
 Key insights explored:
 
@@ -35,7 +36,7 @@ App size vs. installs
 
 Category performance metrics
 
-🛠 Tools Used
+🛠 **Tools Used**
 
 MySQL 8 — data cleaning
 
@@ -50,7 +51,7 @@ CSV — cleaned dataset export
 ├── tableau-dashboard.twb (optional)
 └── README.md
 
-📄 Files Description
+📄 **Files Description**
 
 cleaned-data.csv — final cleaned dataset
 
@@ -58,7 +59,7 @@ query-cleaning.sql — all SQL cleaning queries
 
 tableau-dashboard.twb — visualization file (optional)
 
-✨ Highlights
+✨ **Highlights**
 
 Fully cleaned dataset ready for analysis
 
