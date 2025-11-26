@@ -1,68 +1,69 @@
-📊 **Google Play Store Data Cleaning & EDA**
 
-**Project Overview**
+# 📊 **Google Play Store Data Cleaning & EDA**
 
-This project focuses on cleaning and exploring the Google Play Store dataset using SQL and basic data visualization.
+## 🚀 **Project Overview**
 
-🧹 **Data Cleaning Summary**
+This project focuses on performing **data cleaning** and **exploratory data analysis (EDA)** on the Google Play Store dataset using SQL and basic data visualization.
 
-Steps performed:
+---
 
-Handling missing & inconsistent values
+# 🧹 **Data Cleaning Summary**
 
-Converting text-based numeric values
+### Steps Performed:
 
-Cleaning date formats
+* Handling missing and inconsistent values
+* Converting text-based numeric columns
+* Cleaning date formats
+* Parsing Android version information
+* Cleaning app version formats
+* Removing duplicate entries
 
-Parsing Android version
+---
 
-Cleaning app version formats
+# 📈 **Exploratory Data Analysis (EDA)**
 
-Removing duplicates
+### Key Insights Explored:
 
-📈 **Exploratory Data Analysis (EDA)**
+* Most installed app categories
+* Rating distribution
+* Free vs. paid app comparison
+* Reviews vs. rating correlation
+* App size vs. number of installs
+* Category-level performance metrics
 
-Key insights explored:
+---
 
-Most installed categories
+# 🛠 **Tools Used**
 
-Rating distribution
+* **MySQL 8** — data cleaning
+* **Tableau / Power BI** — data visualization
+* **CSV** — export of the cleaned dataset
 
-Free vs. paid comparison
+---
 
-Reviews vs. rating
+# 📁 **File Structure**
 
-App size vs. installs
-
-Category performance metrics
-
-🛠 **Tools Used**
-
-MySQL 8 — data cleaning
-
-Tableau / Power BI — visualization
-
-CSV — cleaned dataset export
-
-📁 File Structure
+```
 📦 google-playstore-analysis
 ├── cleaned-data.csv
 ├── query-cleaning.sql
 ├── tableau-dashboard.twb (optional)
 └── README.md
+```
 
-📄 **Files Description**
+---
 
-cleaned-data.csv — final cleaned dataset
+# 📄 **Files Description**
 
-query-cleaning.sql — all SQL cleaning queries
+* **cleaned-data.csv** — final cleaned dataset
+* **query-cleaning.sql** — all SQL cleaning queries
+* **tableau-dashboard.twb** — visualization dashboard file (optional)
 
-tableau-dashboard.twb — visualization file (optional)
+---
 
-✨ **Highlights**
+# ✨ **Highlights**
 
-Fully cleaned dataset ready for analysis
+* Fully cleaned dataset ready for analysis
+* Clear and complete SQL documentation
+* Visual insights generated from EDA
 
-Clear SQL documentation
-
-Visual insights from EDA
