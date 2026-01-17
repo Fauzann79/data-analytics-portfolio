@@ -1,2 +1,5 @@
-# data-analytics-portfolio
-My personal portfolio of data analytics projects.  All projects use real-world datasets and focus on data cleaning, SQL analysis, and insight generation.  The goal is to build strong analytical skills and showcase end-to-end workflows used in real business cases.
+This repository contains my personal data analytics projects.
+
+The projects focus on data cleaning, SQL-based analysis, and extracting insights from publicly available datasets.
+Each project documents the analysis process step by step, from preparing raw data to answering specific business or operational questions.
+
