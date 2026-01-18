@@ -1,0 +1,13 @@
+TABLE;COLUMN;ISSUE;ROW COUNT;SOLVABLE;RESOLUTION
+Student Performance;StudentID;Missing Value;40;YES;Generate unique ID menggunakan auto-increment / ROW_NUMBER
+Student Performance;Name;Missing Value;25;NO;Record dihapus karena tidak dapat diidentifikasi
+Student Performance;AttendanceRate;Missing Value;40;YES;Isi dengan median AttendanceRate
+Student Performance;StudyHoursPerWeek;Missing Value;48;YES;Isi dengan median StudyHoursPerWeek
+Student Performance;PreviousGrade;Missing Value;33;YES;Isi dengan rata-rata PreviousGrade berdasarkan FinalGrade category
+Student Performance;ParentalSupport;Missing Value;22;YES;Isi dengan mode (nilai paling sering muncul)
+Student Performance;ExtracurricularActivities;Missing Value;44;YES;Isi dengan 0 (diasumsikan tidak ikut aktivitas)
+Student Performance;FinalGrade;Missing Value;39;NO;Record dihapus karena target utama analisis
+Student Performance;StudyHours;Wrong Input;10;YES;Normalisasi ke rentang wajar (0–6 jam/hari)
+Student Performance;StudyHours;Missing Value;24;YES;Isi dengan rata-rata StudyHours
+Student Performance;Attendance (%);Kelebihan Persen (>100);10;YES;Cap nilai menjadi 100%
+Student Performance;Online Classes Taken;Missing Value;25;YES;Isi dengan FALSE (asumsi tidak mengikuti kelas online)
