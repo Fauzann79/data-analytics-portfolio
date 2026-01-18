@@ -1,5 +1,10 @@
-This repository contains my personal data analytics projects.
+# Data Analytics Portfolio
 
-The projects focus on data cleaning, SQL-based analysis, and extracting insights from publicly available datasets.
-Each project documents the analysis process step by step, from preparing raw data to answering specific business or operational questions.
+A curated collection of hands-on data analytics projects demonstrating data cleaning, SQL analysis, and analytical reasoning.
 
+Each project highlights:
+- Common data quality issues found in public and synthetic datasets
+- Clear justification for data preparation decisions
+- Step-by-step analytical workflows
+
+This repository emphasizes data reliability and analytical readiness rather than model complexity.
