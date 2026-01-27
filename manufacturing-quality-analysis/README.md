@@ -1,80 +1,92 @@
 # Manufacturing Quality & Defect Analysis (SQL)
 
 ## Overview
-This project analyzes manufacturing production data to understand defect patterns and operational issues.
-The analysis focuses on identifying problem areas related to product type, production shift, machine performance,
-and machine downtime.
+This project analyzes manufacturing production data to identify defect patterns and operational issues.
+The analysis focuses on product types, production shifts, machine performance, and machine downtime.
 
-All analysis is performed using SQL.
+All analysis in this project is performed using SQL.
 
 ---
 
 ## Business Context
-The manufacturing process shows variations in product quality across shifts, machines, and product categories.
-Management needs clearer insight into:
-- Where defects are most frequent
+Manufacturing operations show variations in product quality across shifts, machines, and product categories.
+Management requires clearer insights into:
+- Where defects occur most frequently
 - Which shifts and machines require attention
-- Whether downtime impacts defect rates
+- Whether machine downtime impacts defect rates
 
-The goal of this project is to support better operational and maintenance decisions.
+The goal of this analysis is to support data-driven operational and maintenance decisions.
 
 ---
 
 ## Tools Used
 - SQL (MySQL)
-- Relational database
+- Relational Database
 
 ---
 
 ## Dataset Description
-The dataset contains daily production records, including:
+The dataset contains daily manufacturing production records, including:
 - Product type
-- Shift
+- Production shift
 - Machine ID
 - Units produced
 - Number of defects
 - Downtime and maintenance hours
 - Scrap rate
 
-A duplicate table was created to ensure the original data remained unchanged during cleaning.
+A duplicate table was created to ensure the original dataset remained unchanged during the data cleaning process.
 
 ---
 
 ## Data Cleaning
-The following steps were performed:
+The following data cleaning steps were performed:
 - Converted date fields into proper SQL `DATE` format
-- Fixed data types for numerical columns
-- Replaced missing or invalid defect values
-- Checked null values across key operational columns
+- Standardized data types for numerical columns
+- Handled missing and invalid defect values
+- Checked for null values across key operational columns
 
-Cleaning queries are documented in `02_data_cleaning.sql`.
+All data cleaning queries are documented in `sql/02_data_cleaning.sql`.
 
 ---
 
 ## Analysis Performed
-Key areas of analysis include:
+Key analyses include:
 - Overall production and defect performance
 - Defect rate comparison by product type
-- Defect rate analysis by shift
+- Defect rate analysis by production shift
 - Machine-level defect contribution
-- Relationship between downtime and defect rate
+- Relationship between machine downtime and defect rate
 
-Exploratory queries can be found in `03_exploratory_analysis.sql`.
+Exploratory analysis queries can be found in `sql/03_exploratory_analysis.sql`.
+
+---
+
+## Sample Analysis Output
+
+### Defect Rate by Production Shift and Machine
+![Defect Rate by Shift](images/defect_machine_and_shift.png)
+
+### Unit Produced
+![Defects by Machine](images/unit_produced.png)
+
+### Unit Type Produces
+![Downtime vs Defect Rate](images/unit_type_produced.png)
 
 ---
 
 ## Key Findings
-- Certain shifts consistently show higher defect rates
-- Machines with higher average downtime tend to have higher defect rates
+- Certain production shifts consistently show higher defect rates
+- Machines with higher average downtime tend to produce more defects
 - A small number of machines contribute disproportionately to total defects
-- Some product types appear more sensitive to operational disruptions
+- Some product types are more sensitive to operational disruptions
 
 ---
 
 ## Recommendations
-- Prioritize maintenance for machines with high downtime and defect rates
-- Review operational conditions on high-defect shifts
-- Apply tighter quality control for high-risk product categories
+- Prioritize preventive maintenance for machines with high downtime and defect rates
+- Review operational conditions during high-defect production shifts
+- Apply stricter quality control for high-risk product categories
 - Monitor machine–shift combinations with consistently poor performance
 
 ---
@@ -82,6 +94,10 @@ Exploratory queries can be found in `03_exploratory_analysis.sql`.
 ## Repository Structure
 manufacturing-quality-analysis-sql/
 ├── README.md
+├── images/
+│ ├── defect_by_shift.png
+│ ├── defect_by_machine.png
+│ └── downtime_vs_defect.png
 ├── sql/
 │ ├── 01_data_preparation.sql
 │ ├── 02_data_cleaning.sql
@@ -92,6 +108,3 @@ manufacturing-quality-analysis-sql/
 
 ---
 
-## Notes
-This project focuses on SQL-based analysis and insight generation.
-Visualization and dashboard development are considered future improvements.
