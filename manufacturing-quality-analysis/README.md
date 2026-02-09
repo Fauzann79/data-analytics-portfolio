@@ -62,16 +62,9 @@ Exploratory analysis queries can be found in `sql/03_exploratory_analysis.sql`.
 
 ---
 
-## Sample Analysis Output
+## Dashboard Preview
 
-### Defect Rate by Production Shift and Machine
-![Defect Rate by Shift](images/defect_machine_and_shift.png)
-
-### Unit Produced
-![Defects by Machine](images/unit_produced.png)
-
-### Unit Type Produces
-![Downtime vs Defect Rate](images/unit_type_produced.png)
+![Dashboard](images/MAIN_DASHBOARD.png)
 
 ---
 
