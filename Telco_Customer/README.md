@@ -71,7 +71,7 @@ Based on the analysis, the company could:
 ---
 
 ## Dashboard Preview
-(Dashboard/Dashboard.png)
+![Dashboard Preview](Dashboard/Dashboard.png)
 
 
 ---
